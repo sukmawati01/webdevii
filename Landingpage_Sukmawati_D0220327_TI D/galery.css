@@ -1,0 +1,133 @@
+/* Navbar */
+
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+.navbar-brand {
+    font-family: viga;
+    font-size: 32px;
+
+}
+
+
+
+
+#nav {
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+}
+
+.navbar {
+    background: url('img/1.jpg') no-repeat center;
+}
+
+.navbar-brand {
+    font-weight: bolder;
+    color: aliceblue;
+ 
+}
+.navbar-nav li {
+    padding: 0 10px;
+
+}
+
+.navbar-nav li a {
+    color: aliceblue !important;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+
+
+.container{
+    width: 100%;
+    height: 100%;
+    border: 0px solid rgb(247, 244, 244);
+}
+
+.backgroud{
+    background-size: cover;
+    width: 100%;
+    height: 350px ;
+    border: 0px solid;
+    
+    
+}
+
+
+/*galery*/
+
+.container{
+    width:2200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.row{
+    position:static;
+    left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.card{
+    flex: 1 1 21rem;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px 30px;
+    align-self: normal;
+    padding: 2px 50px;
+}
+
+.card img{
+    width: 300px;
+    height: -100px;
+}
+.card h5{
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    margin: 10px 0;
+
+}
+.card p{
+    margin-bottom: 20px;
+}
+
+.card .btn {
+    display: inline-block;
+    margin-top: auto;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/* DEKSTOP VERSION */
+@media (min-width: 992px) { 
+    .navbar-brand, .nav-link{
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0,0.7);
+
+    }
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    
+    } 
+
+    .nav-link:hover::after{
+        content:'';
+        display: block;
+        border-bottom: 3px solid #0B63DC;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+ }
